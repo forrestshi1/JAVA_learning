@@ -1,0 +1,4 @@
+in command
+ls - to show uncompiled.java file
+javac (name) .java - to compile the file
+java (name) - to run the executable file
