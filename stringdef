@@ -1,0 +1,17 @@
+public class ReviewString {
+  
+  public static void main(String[] args) {
+    String fn="Forrest";
+    String ln="Gump";
+    System.out.println(fn.length());//print the length of string
+    System.out.println(fn.concat(ln));//contact two string values but don't change the value
+    System.out.println(fn.indexOf("F"));//print the index with the value
+    System.out.println(fn.charAt(0));//print the value with the index
+    System.out.println(fn.equals(ln));//to see whether the value is equal
+    System.out.println(fn.substring(0,5));//print values between two numbers of index
+    System.out.println(fn.toUpperCase());//a->A
+    
+    
+  }
+  
+}
