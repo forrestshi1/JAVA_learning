@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class DNA {
+  public static boolean func(String a) {
+      if(a.length() %3 != 0) {
+          return false;
+      }
+      else if(!a.substring(0,3).equals("ATG") || !a.substring(a.length()-3,a.length()).equals("TGA")) {
+          return false;             //!!! can not use "!=“ because that "!=' compare the address instead of value!!!
+      }     
+      return true;
+  }
+
+  public static void main(String[] args) {
+      Scanner strand = new Scanner(System.in);
+      System.out.println("please input the dna strand");
+      String DNAstrand = strand.next();
+      boolean a = func(DNAstrand);
+      if(a) {
+          System.out.println("yes");
+      }
+      else {
+          System.out.println("no");
+      }    
+  } 
+}
